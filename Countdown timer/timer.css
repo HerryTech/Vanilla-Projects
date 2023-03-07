@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #F1f5f8;
+}
+
+*, ::before, ::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    color: hsl(205, 78%, 60%);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+p{
+    color: gray;
+    font-size: 0.9rem;
+    margin: 1.5em 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.article-info{
+    max-width: 100%;
+    display: block;
+}
+
+.section-center{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.giveaway{
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+}
+
+.deadline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.deadline-format{
+    height: 75px;
+    width: 80px;
+    background: black;
+    color: white;
+    margin-right: 2em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.deadline-format h4{
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+}
+
+span{
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+    h3{
+        font-size: 2rem;
+    }
+
+    .giveaway{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+.lucky{
+    font-size: 1rem;
+    color: green;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+.expired{
+    letter-spacing: 2px;
+    color: red
+}
+@media (min-width: 1000px){
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        place-items: center;
+        width: 95vw;
+    }
+
+    img{
+        margin-bottom: 0;
+        margin-left:1em;
+    }
+    h3{
+        font-size: 2rem;
+    }
+
+    .giveaway{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+}
