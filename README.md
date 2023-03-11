@@ -1,6 +1,6 @@
 # Vanilla-Projects
 HTML, CSS and Javascript
 
-***Counter Timer***
+**Counter Timer**
 
-***Color Flipper***
+**Color Flipper**
