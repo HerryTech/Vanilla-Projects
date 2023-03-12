@@ -1,0 +1,62 @@
+body{
+    background-color: #F1f5f8;
+    color: hsl(209, 61%, 16%);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 */
+
+h1{
+    margin-bottom: 0.4em;
+    font-size: 3rem;
+}
+
+span{
+    font-size: 5rem;
+}
+
+/* container */
+
+.container{
+    text-align: center;
+    margin-top: 9em;
+}
+
+/* buttons*/ 
+
+button{
+    margin-right: 1.5em;
+    margin-top: 2.5em;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 0.375rem 0.75rem;
+    background-color: transparent;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    color: #222;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    letter-spacing: 0.2rem;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 800px){
+    h1{
+        font-size: 4rem;
+    }
+
+    span{
+        font-size: 6rem;
+    }
+}
