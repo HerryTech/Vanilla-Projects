@@ -1,0 +1,164 @@
+body{
+    font-family: sans-serif;
+    background-color: #F1f5f8;;
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 0.9em;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.section-center{
+    background: white;
+    border-radius: 10px;
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    margin-top: 8rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.alert{
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    height: 1.25rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 0.5em;
+}
+
+.alert-danger{
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background: #d4edda;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+}
+
+#grocery{
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: hsl(210, 36%, 96%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    text-transform: capitalize;
+}
+
+#grocery::placeholder{
+    text-transform: lowercase;
+}
+
+.submit-btn{
+    padding: 0.25em 1em;
+    border-color: transparent;
+    background-color: lightskyblue;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.submit-btn:hover{
+    background: hsl(205, 87%, 47%);
+    color: white;
+}
+
+.grocery-container{
+    visibility: hidden;
+    transition: all 0.3s linear;
+    margin-top: 1.5em;
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.grocery-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+
+.grocery-item:hover{
+    background: hsl(210, 36%, 96%);;
+}
+
+button{
+    border: transparent;
+    background-color: transparent;
+}
+
+.edit-btn{
+    color: lightgreen;
+    margin-right: 0.4em;
+    cursor: pointer;
+}
+
+.edit-btn:hover{
+    color: green
+}
+
+.delete-btn{
+    color: lightcoral;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    color: red;
+}
+
+.clear-btn{
+    display: grid;
+    margin-top: 1.5em;
+    text-transform: capitalize;
+    color: lightcoral;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.clear-btn:hover{
+    color: red;
+}
+
+@media (min-width: 800px){
+    .section-center{
+        width: 95vw;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+}
