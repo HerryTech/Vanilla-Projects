@@ -6,4 +6,6 @@
 
 **3. Simple Counter:** `Decreases/reset/increases` the value of the counter depending on the `button clicked`
 
-**4. Grocery list:** `Stores grocery items` inputed in it via `local storage`. You can `edit/delete` any item or `clear all` the items in the grocery list.
+**4. Grocery list:** `Stores grocery items` inputted in it via `local storage`. You can `edit/delete` any item or `clear all` the items in the grocery list.
+
+**5. Text generator:** `Generates a number of text` (from 1-9) depending on the number inputted or a `random single text` if no number is inputted.
