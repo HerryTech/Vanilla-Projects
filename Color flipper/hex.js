@@ -18,3 +18,4 @@ function changeColor(){
 function getRandomNumber(){
     return Math.floor(Math.random() * hexValue.length)
 }
+
