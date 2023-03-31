@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 body{
     font-family: Roboto;
-    background: #595DB8;
     text-align: center;
 }
 
@@ -45,21 +44,22 @@ img{
     border-radius: 50%;
 }
 
-.countries-container{
+.draggable-container{
     margin: 0 auto;
     margin-bottom: 1em;
     padding: 1em;
     width: 425px;
-    background: black;
-    color: white;
-    border: 1px solid black;
+    background: white;
+    color: black;
+    border: 1px solid grey;
     border-radius: 10px;
 }
 
-.country{
+.draggable-list{
     display: flex;
     align-items: center;
     border: 1px solid grey;
+    background: grey;
     border-radius: 5px;
     margin-bottom: 1em;
     padding: 0.5em;
@@ -77,7 +77,7 @@ button{
     font-size: 1rem;
     letter-spacing: 2px;
     background: white;
-    color: purple;
+    color: black;
     border: transparent;
     border-radius: 5px;
     padding: 0.6em;

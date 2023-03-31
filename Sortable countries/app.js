@@ -51,7 +51,7 @@ const countries = [
 
 ];
 
-const countryContainer = document.querySelector(".countries-container")
+const countryContainer = document.querySelector(".draggable-container")
 //shuffle the country list
 function shuffleCountries() { 
     return countries.sort(()=>Math.random()-0.5);
@@ -63,8 +63,8 @@ function shuffleCountries() {
 function createCountryList(){
         [...gameCountries]
         .forEach((person, index) => {
-            const countryList = document.createElement("div");
-            countryList.classList.add("country")
+            const countryList = document.createElement("li");
+            countryList.classList.add("draggable-list")
             countryList.innerHTML = `<img src="${person.flag}" alt="flag" class="country-flag">
                 <div class="the-draggables" draggable="true">
                 <p class="country-name">${person.name}</p>
@@ -74,37 +74,15 @@ function createCountryList(){
             countryContainer.appendChild(countryList)   
         })
 
-        addEventListeners(); 
+        addEventListeners();
 }
 
-createCountryList();
+createCountryList()
 
 //drag and drop
-function addEventListeners(){
-    const draggables = document.querySelectorAll("the-draggables")
-    const country = document.querySelectorAll(".country")
-
-    draggables.forEach(function(draggable){
-    draggable.addEventListener("dragstart", dragStart)
-
-    function dragStart(){
-        item.classList.add("dragging")
-        console.log("drag")
-    }  
-
-    dragStart()
-})
-
-/*country.forEach(item => {
-    item.addEventListener('dragover', dragOver);
-    item.addEventListener('drop', dragDrop);
-    item.addEventListener('dragenter', dragEnter);
-    item.addEventListener('dragleave', dragLeave);
-  });*/
-
+function addEventListeners() {
+    const draggables = document.querySelectorAll(".the-draggable");
+    const dragListItems = document.querySelectorAll('.countryContainer li');
 }
 
-
-
-
-
+//still in progress
