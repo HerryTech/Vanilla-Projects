@@ -73,8 +73,6 @@ function createCountryList(){
 
             countryContainer.appendChild(countryList)   
         })
-
-        addEventListeners();
 }
 
 createCountryList()
