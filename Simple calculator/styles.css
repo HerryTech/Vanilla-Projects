@@ -44,6 +44,12 @@ button{
     border: none;
     box-shadow: 2px 2px 5px rgb(156, 155, 155);
     font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: grey;
+    color: white;
 }
 
 .equal-btn{
