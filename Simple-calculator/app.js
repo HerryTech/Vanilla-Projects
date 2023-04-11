@@ -20,12 +20,6 @@ clearButton(){
 }
 
 deleteButton(){
-    this.currentOperand = this.currentOperand.toString().slice(0, -1)
-}
-
-insertOperator(operation){
-    if (this.currentOperand === "") return
-    if(this.previousOperand !== ""){
         this.generateResult()
     }
     this.operation = operation
