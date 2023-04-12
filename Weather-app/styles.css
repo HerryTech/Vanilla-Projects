@@ -27,7 +27,7 @@ button{
 }
   
 .weather-app-container{
-    background-image: url("../Images/Mountain.jpg");
+    background-image: url("./Images/Mountain.jpg");
     background-repeat: no-repeat;
     border: 2px solid black;
     border-radius: 20px;
