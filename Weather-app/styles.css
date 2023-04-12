@@ -6,31 +6,60 @@
 }
 
 body{
-    background: plum;
+    background: rgb(227, 224, 226);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-input{
-    margin-top: 1em;
-    border: 1px solid white;
-    border-radius: 7px;
-    padding: 0.3em;
-}
-
 button{
-    border-radius: 2px;
-    border: 1px solid white;
+    border-radius: 5px;
+    border: none;
     padding: 0.2em 0.4em;
 }
   
 .weather-app-container{
-    background-image: url("./Images/Mountain.jpg");
+    background-image: url("https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-repeat: no-repeat;
-    border: 2px solid black;
+    background-size: cover;
     border-radius: 20px;
-    padding: 1em;
-   
+    box-shadow: 5px 5px 10px grey;
+    padding: 1.5em;
+}
+
+.time-and-date{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 0.5em;
+}
+
+.input-box{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 0.3em;
+    width: 250px;
+    text-align: center;
+}
+
+.icon{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 0.2em;
+}
+
+.weather-report{
+    text-align: center;
+    color: white;
+}
+
+.temp-report{
+    font-size: 2.5rem;
+}
+
+.city-report{
+    text-transform: uppercase;
 }

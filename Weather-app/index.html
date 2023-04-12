@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script src="https://kit.fontawesome.com/21595dea42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="weather-app-container">
-        <p>2:00 pm</p>
-        <p>Wed, 12 April</p>
-        <input type="text" placeholder="enter a city">
+        <div class="time-and-date">
+            <h2>2:00 pm</h2>
+            <h3>Wed, 12 April</h3>
+        </div>
+        <input type="text" class="input-box" placeholder="enter a city">
         <button>search</button>
-        <p>20&degC</p>
-        <p>Ogun state</p>
-        <div>
+        <div class="icon">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+        </div>
+        <div class="weather-report">
+            <p class="temp-report">20<span>&degC</span></p>
+            <p class="city-report">Ogun state</p>
             <p>Humidity</p>
             <p>Wind speed</p>
         </div>
