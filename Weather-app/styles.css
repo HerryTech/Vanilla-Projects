@@ -1,0 +1,36 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input{
+    margin-top: 1em;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 0.3em;
+}
+
+button{
+    border-radius: 2px;
+    border: 1px solid white;
+    padding: 0.2em 0.4em;
+}
+  
+.weather-app-container{
+    background-image: url("../Images/Mountain.jpg");
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1em;
+   
+}
