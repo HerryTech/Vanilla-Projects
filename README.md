@@ -12,4 +12,4 @@
 
 **6. Simple calculator:** `Perform a simpe math operation`.
 
-**6. Weather App:** Check for the `weather condition` of a city/country.
+**7. Weather App:** Check for the `weather condition` of a city/country.
