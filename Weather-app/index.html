@@ -11,19 +11,21 @@
 <body>
     <div class="weather-app-container">
         <div class="time-and-date">
-            <h2>2:00 pm</h2>
-            <h3>Wed, 12 April</h3>
+            <h2 class="time"></h2>
+            <h3 class="date"></h3>
         </div>
         <input type="text" class="input-box" placeholder="enter a city">
         <button>search</button>
         <div class="icon">
             <i class="fa-solid fa-cloud-sun-rain"></i>
         </div>
-        <div class="weather-report">
-            <p class="temp-report">20<span>&degC</span></p>
+        <div class="weather-details">
+            <p class="temp"><span class="temp-report">20</span>&degC</p>
             <p class="city-report">Ogun state</p>
-            <p>Humidity</p>
-            <p>Wind speed</p>
+            <p>Humidity: <span class="humidity-report">20</span>% </p>
+            <p>Wind speed: <span class="wind-report">20</span> km/h</p>
+            <p>Pressure: <span class="pressure-report">20</span></p>
+            <p>Weather condition: <span class="weather-report">20</span></p>
         </div>
     </div>
 

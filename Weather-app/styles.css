@@ -6,7 +6,9 @@
 }
 
 body{
-    background: rgb(227, 224, 226);
+    background: url("https://media.gettyimages.com/id/1207663571/photo/empty-pavement-with-modern-architecture.jpg?s=612x612&w=gi&k=20&c=HOXes9ocKgFP2JGi8XGHz2SRs3Rrvmyu2Q6UQ8e5bI4=");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,11 +20,17 @@ button{
     border: none;
     padding: 0.2em 0.4em;
 }
+
+button:hover{
+    color: white;
+    background: black;
+}
   
 .weather-app-container{
     background-image: url("https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid white;
     border-radius: 20px;
     box-shadow: 5px 5px 10px grey;
     padding: 1.5em;
@@ -51,15 +59,17 @@ button{
     margin-bottom: 0.2em;
 }
 
-.weather-report{
+.weather-details{
     text-align: center;
     color: white;
 }
 
-.temp-report{
+.temp{
     font-size: 2.5rem;
 }
 
 .city-report{
     text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
 }
