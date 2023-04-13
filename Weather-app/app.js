@@ -34,23 +34,23 @@ const windReport = document.querySelector(".wind-report");
 const pressureReport = document.querySelector(".pressure-report");
 const weatherReport = document.querySelector(".weather-report");
 
-const today = new Date();
-const hours = today.getHours();
-const mins = today.getMinutes()
-const days = today.getDay()
-const dateDay = today.getDate()
-const months = today.getMonth();
+setInterval(() => {
+    const today = new Date();
+    const hours = today.getHours();
+    const mins = today.getMinutes()
+    const days = today.getDay()
+    const dateDay = today.getDate()
+    const months = today.getMonth();
+    
+    const min = mins < 10 ? "0" + mins : mins
+    const hour = hours > 12 ? hours % 12 : hours;
+    let day = week[days];
+    let month = yearMonths[months];
+    const amPm = hours >= 12 ? "PM" : "AM"
 
-const min = mins < 10 ? "0" + mins : mins
-const hour = hours > 12 ? hours % 12 : hours;
-let day = week[days];
-let month = yearMonths[months];
-const amPm = hours >= 12 ? "PM" : "AM"
-
-setInterval(()=> {
     time.textContent = `${hour}:${min} ${amPm}`
     date.textContent = `${day}, ${dateDay} ${month}`
-}, 1000);
+}, 1000)
 
 searchBtn.addEventListener("click", getWeatherData);
 
