@@ -41,7 +41,7 @@ const days = today.getDay()
 const dateDay = today.getDate()
 const months = today.getMonth();
 
-const min = mins < 10 ? 0 + mins : mins
+const min = mins < 10 ? "0" + mins : mins
 const hour = hours > 12 ? hours % 12 : hours;
 let day = week[days];
 let month = yearMonths[months];
