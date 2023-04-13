@@ -59,11 +59,11 @@ async function getWeatherData(){
     const cityName = cityInput.value;
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=af13509a3a39fda2a67910f9f88bf77a`);
     const data = await response.json();
-    tempReport.textContent = Math.round(data.main.temp);
+    tempReport.textContent = `${Math.round(data.main.temp)}°C`;
     cityReport.textContent = cityInput.value;
     pressureReport.textContent = data.main.pressure
-    windReport.textContent = data.wind.speed
-    humidityReport.textContent = data.main.humidity
+    windReport.textContent = `${data.wind.speed} km/h`;
+    humidityReport.textContent = `${data.main.humidity}%`
     weatherReport.textContent = data.weather[0].main
     cityInput.value = ""
 }
