@@ -10,6 +10,6 @@
 
 **5. Text generator:** `Generates a number of text` (from 1-9) depending on the number inputted or a `random single text` if no number is inputted.
 
-**6. Simple calculator:** `Perform a simpe math operation`.
+**6. Simple calculator:** `Performs a simpe math operation`.
 
-**7. Weather App:** Check for the `weather condition` of a city/country.
+**7. Weather App:** Checks for the `weather condition` of a city/country.
