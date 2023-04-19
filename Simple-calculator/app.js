@@ -20,12 +20,21 @@ clearButton(){
 }
 
 deleteButton(){
-        this.generateResult()
-    }
+    this.generateResult()
     this.operation = operation
     this.previousOperand = this.currentOperand
     this.currentOperand = ""
 }
+
+insertOperator(operation) {
+    if (this.currentOperand === '') return
+    if (this.previousOperand !== '') {
+      this.generateResult()
+    }
+    this.operation = operation
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
+  }
 
 insertNumber(number){
     if(number === "." && this.currentOperand.includes(".")) return
