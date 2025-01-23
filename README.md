@@ -13,3 +13,4 @@
 **6. Simple calculator:** `Performs a simpe math operation`.
 
 **7. Weather App:** Checks for the `weather condition` of a city/country.
+....
